@@ -26,7 +26,7 @@ public class CustomGaugeMetrics {
             public void run(SourceContext<String> out) throws Exception {
                 while (isRunning) {
                     out.collect(String.valueOf(Math.round(Math.random() * 100)));
-                    Thread.sleep(15000);
+                    Thread.sleep(150);
                 }
             }
 
